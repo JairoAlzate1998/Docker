@@ -45,7 +45,8 @@ Lo hacemos con el siguiente comando: `sudo apt-get install docker-ce docker-ce-c
 
 Una vez tengamos esto podemos realizar la prueba del "Hola mundo" con el siguiente comando: `sudo docker run hello-world` y obtenemos el siguiente resultado:
 
-        ** Hello from Docker!
+        ** 
+        Hello from Docker!
             This message shows that your installation appears to be working correctly.
 
             To generate this message, Docker took the following steps:
@@ -67,4 +68,36 @@ Una vez tengamos esto podemos realizar la prueba del "Hola mundo" con el siguien
             https://docs.docker.com/get-started/
         **
 
+Para saber que version de docker instalamos en nuestro sistema utilizamos el siguiente comando: `sudo docker version` y obtenemos lo siguiente: 
 
+        ** 
+        Client: Docker Engine - Community
+        Version:           20.10.7
+        API version:       1.41
+        Go version:        go1.13.15
+        Git commit:        f0df350
+        Built:             Wed Jun  2 11:56:38 2021
+        OS/Arch:           linux/amd64
+        Context:           default
+        Experimental:      true
+
+        Server: Docker Engine - Community
+        Engine:
+        Version:          20.10.7
+        API version:      1.41 (minimum version 1.12)
+        Go version:       go1.13.15
+        Git commit:       b0f5bc3
+        Built:            Wed Jun  2 11:54:50 2021
+        OS/Arch:          linux/amd64
+        Experimental:     false
+        containerd:
+        Version:          1.4.8
+        GitCommit:        7eba5930496d9bbe375fdf71603e610ad737d2b2
+        runc:
+        Version:          1.0.0
+        GitCommit:        v1.0.0-0-g84113ee
+        docker-init:
+        Version:          0.19.0
+        GitCommit:        de40ad0
+        **
+ 
