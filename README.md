@@ -103,3 +103,17 @@ Para saber que version de docker instalamos en nuestro sistema utilizamos el sig
  
 ## Docker Compose
 
+Ejecutamos este comando para descargar la versión estable actual de Docker Compose: `sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose`
+
+Aplicamos permisos ejecutables al binario: `sudo chmod +x /usr/local/bin/docker-compose`
+
+Para saber la version del Docker Compose utilizamos el siguiente comando: `docker-compose version` y obtenemos esto:
+
+        **
+        docker-compose version 1.29.2, build 5becea4c
+        docker-py version: 5.0.0
+        CPython version: 3.7.10
+        OpenSSL version: OpenSSL 1.1.0l  10 Sep 2019
+        **
+
+
