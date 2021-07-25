@@ -21,6 +21,21 @@ Docker utiliza herramientas tales como:
 
 ### Instalación de Docker
 
-Iniciamos con la instalación de Docker, la cual dentro de una maquina virtual Ubuntu corremos el siguiente comando:
+Iniciamos con la instalación de Docker dentro de una maquina virtual Ubuntu con los siguientes comandos: 
+
+`sudo apt-get update` - > Esto para actualizar los paquetes del Ubuntu
+ `sudo apt-get install \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    gnupg \
+    lsb-release` -> Esto para instalar los paquetes necesarios para la instalación.
+ 
+Añadimos la llave GPG del docker con el siguiente comando: `curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg`.
+ 
+Utilizamos el siguiente comando para configurar el repositorio estable: `echo \
+  "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
+  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null`
 
  `sudo apt-get install docker-ce docker-ce-cli containerd.io`
+
