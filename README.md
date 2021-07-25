@@ -19,3 +19,8 @@ Docker utiliza herramientas tales como:
 
 ## Clase del 21 de Julio del 2021
 
+### Instalación de Docker
+
+Iniciamos con la instalación de Docker, la cual dentro de una maquina virtual Ubuntu corremos el siguiente comando:
+
+ `sudo apt-get install docker-ce docker-ce-cli containerd.io`
