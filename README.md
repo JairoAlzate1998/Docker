@@ -10,3 +10,9 @@ Esto conlleva que necesitemos muchos menos recursos de hardware que si tuvieras 
 Con ayuda de docker podemos realizar la entrega rapida y consistente de aplicaciones, puesto que, optimiza el ciclo de vida del desarrollo del software, esto porque nos crea entornos estandarizados y tambien nos ayuda con la integración continua de la apliaciones.
 
 Entonces Docker nos permite que, un grupo de desarrolladores generen codigo en contenedores y lo compartan con otras personas, estas verfirican y encuentran si encuentran errores los corregien y los vuelven a subir al entorno de pruebas y validación, y pasando esto, la aplicación ya estaria lista para el usuario final.
+
+Docker utiliza herramientas tales como: 
+ * Kubernetes
+ * Swarm 
+ * Mesosphere Datacenter (DC/OS)
+ * Google Kubernetes Engine
