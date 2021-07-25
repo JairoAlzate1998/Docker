@@ -24,7 +24,8 @@ Docker utiliza herramientas tales como:
 Iniciamos con la instalación de Docker dentro de una maquina virtual Ubuntu con los siguientes comandos: 
 
 `sudo apt-get update` - > Esto para actualizar los paquetes del Ubuntu
- `sudo apt-get install \
+
+`sudo apt-get install \
     apt-transport-https \
     ca-certificates \
     curl \
