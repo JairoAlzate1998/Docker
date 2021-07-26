@@ -121,3 +121,7 @@ Para subir un contenedor utilizamos el siguiente comando: `sudo docker-compose u
 Para listar los contenedores se utiliza el siguiente comando: `sudo docker container ls` o tambien: `sudo docker container ps`
 
 ## Clase 22 de Julio del 2021
+
+Para examinar la ayuda de docker usamos el siguiente comando: `docker --help`
+
+Con los contenedores podemos realizar operaciones basicas, como por ejemplo reiniciar (`docker container restart nombre_contenedor`), iniciar (`docker container start nombre_contendor`) o detener (`docker container stop`).
