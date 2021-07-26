@@ -130,7 +130,7 @@ Ahora para las imagenes tenemos comandos como:
 
  * Lista imagenes (`docker image ls`), con este comando obtenemos lo siguiente: 
  
-    **
+        **
         REPOSITORY                        TAG           IMAGE ID       CREATED         SIZ                                                                E
         jairoalzate1998/fedesoft-web      latest        142598ab31ba   3 days ago      133                                                                MB
         some-content-nginx                latest        142598ab31ba   3 days ago      133                                                                MB
@@ -140,7 +140,7 @@ Ahora para las imagenes tenemos comandos como:
         hello-world                       latest        d1165f221234   4 months ago    13.                                                                3kB
         nabo.codimd.dev/hackmdio/hackmd   2.2.0         09a9a7c1d73e   12 months ago   819                                                                MB
         postgres                          11.6-alpine   89ae06c2ad76   18 months ago   152                                                                MB
-    **
+        **
     
 * Eliminar un imagen primero se debe eliminar el contenedor de la imagen (`docker container rm nombre_contenedor`) y luego si podemos proceder a eliminar la imagen (`docker image rm nombre_imagen`)
 
