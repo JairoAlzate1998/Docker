@@ -116,4 +116,6 @@ Para saber la version del Docker Compose utilizamos el siguiente comando: `docke
         OpenSSL version: OpenSSL 1.1.0l  10 Sep 2019
         **
 
-Para subir un contenedor utilizamos el siguiente comando: `sudo docker-compose up -d`
+Para subir un contenedor utilizamos el siguiente comando: `sudo docker-compose up -d`.
+
+Para listar los contenedores se utiliza el siguiente comando: `sudo docker container ls` o tambien: `sudo docker container ps`
