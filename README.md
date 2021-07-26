@@ -101,7 +101,7 @@ Para saber que version de docker instalamos en nuestro sistema utilizamos el sig
         GitCommit:        de40ad0
         **
  
-## Docker Compose
+### Docker Compose
 
 Ejecutamos este comando para descargar la versión estable actual de Docker Compose: `sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose`
 
@@ -119,3 +119,5 @@ Para saber la version del Docker Compose utilizamos el siguiente comando: `docke
 Para subir un contenedor utilizamos el siguiente comando: `sudo docker-compose up -d`.
 
 Para listar los contenedores se utiliza el siguiente comando: `sudo docker container ls` o tambien: `sudo docker container ps`
+
+## Clase 22 de Julio del 2021
