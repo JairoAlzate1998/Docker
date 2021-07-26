@@ -125,3 +125,22 @@ Para listar los contenedores se utiliza el siguiente comando: `sudo docker conta
 Para examinar la ayuda de docker usamos el siguiente comando: `docker --help`
 
 Con los contenedores podemos realizar operaciones basicas, como por ejemplo reiniciar (`docker container restart nombre_contenedor`), iniciar (`docker container start nombre_contendor`) o detener (`docker container stop`).
+
+Ahora para las imagenes tenemos comandos como: 
+
+ * Lista imagenes (`docker image ls`), con este comando obtenemos lo siguiente: 
+    **
+        REPOSITORY                        TAG           IMAGE ID       CREATED         SIZ                                                                E
+        jairoalzate1998/fedesoft-web      latest        142598ab31ba   3 days ago      133                                                                MB
+        some-content-nginx                latest        142598ab31ba   3 days ago      133                                                                MB
+        jsgiraldoh/fedesoft-web           latest        b3153cc68e1f   3 days ago      133                                                                MB
+        <none>                            <none>        cf232e3e05d1   3 days ago      133                                                                MB
+        nginx                             latest        08b152afcfae   4 days ago      133                                                                MB
+        hello-world                       latest        d1165f221234   4 months ago    13.                                                                3kB
+        nabo.codimd.dev/hackmdio/hackmd   2.2.0         09a9a7c1d73e   12 months ago   819                                                                MB
+        postgres                          11.6-alpine   89ae06c2ad76   18 months ago   152                                                                MB
+    **
+* Eliminar un imagen primero se debe eliminar el contenedor de la imagen (`docker container rm nombre_contenedor`) y luego si podemos proceder a eliminar la imagen (`docker image rm nombre_imagen`)
+
+    
+Para poder inspeccionar un contenedor podemos usar el comando `docker inspect nombre_contenedor`. Esto nos arroja un reporte en tipo json el cual contiene desde la fecha que fue creado el contenedor hasta las configuraciones del contenedor.
