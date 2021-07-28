@@ -151,6 +151,11 @@ Ahora tambien tenemos una repositorio para las imagenes que creamos, este se lla
 
 ![alt text](./img/dockerhub.png)
 
+Aca podemos ver una imagen llamada fedesoft-web, que creamos y subimos al repositorio, esto con los siguientes comandos:
+
+`docker tag local-image:tagname new-repo:tagname` -> Este lo usamos para tagear  la imagen la cual vamos a subir al repositorio
+`docker push new-repo:tagname` -> Este es el push de cualquier repositorio, se encarga de subir los cambios a la web
+
 ## Clase 26 de Julio del 2021
 
 Para observar los logs de un contenedor utilizamos el sigueinte comando: `docker logs -f nombre` y obtenemos algo como lo siguiente: 
