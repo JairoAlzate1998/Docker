@@ -146,3 +146,18 @@ Ahora para las imagenes tenemos comandos como:
 
     
 Para poder inspeccionar un contenedor podemos usar el comando `docker inspect nombre_contenedor`. Esto nos arroja un reporte en tipo json el cual contiene desde la fecha que fue creado el contenedor hasta las configuraciones del contenedor.
+
+
+## Clase 26 de Julio del 2021
+
+Para observar los logs de un contenedor utilizamos el sigueinte comando: `docker logs -f nombre` y obtenemos algo como lo siguiente: 
+
+        **
+        
+           172.19.0.3 - - [26/Jul/2021:19:45:57 +0000] "GET / HTTP/1.1" 200 485 "-" "Mozilla /5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/              92.0.4515.107 Safari/537.36 Edg/92.0.902.55"
+           172.19.0.3 - - [26/Jul/2021:19:45:58 +0000] "GET /logo.png HTTP/1.1" 200 13133 "h ttp://192.168.1.10/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.3 6            (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36 Edg/92.0.902.55"
+           172.19.0.3 - - [26/Jul/2021:19:45:58 +0000] "GET /favicon.ico HTTP/1.1" 200 485 " http://192.168.1.10/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537. 36            (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36 Edg/92.0.902.55"
+           172.19.0.3 - - [26/Jul/2021:19:48:20 +0000] "GET / HTTP/1.1" 200 485 "-" "Mozilla /5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/              92.0.4515.107 Safari/537.36 Edg/92.0.902.55"
+
+        
+        **
