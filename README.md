@@ -194,3 +194,5 @@ Una vez bajemos un proyecto de jenkins del un respositorio, podemos observar su 
                 driver: bridge
 
         ** 
+
+Para poner a correr un contenedor en especifico y no todos los que se encuentren en el sistema utilizamos el siguiente comando: `docker-compose -f nombre_Contendor up -d`. Con esto apartir del nombre del contenedor, lo iniciamos sin que los demas contenedores que tenemos se incien.
