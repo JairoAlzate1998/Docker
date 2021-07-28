@@ -161,3 +161,36 @@ Para observar los logs de un contenedor utilizamos el sigueinte comando: `docker
 
         
         **
+
+
+Con el comando `free -h` podemos obervar la memoria y el espacio ocupado por en el sistema.
+
+Si quieremos crear una cierta cantidad de copias de un contendor, podemos utilizar el siguiente comando: `docker-compose up --scale web=5 -d` -> Con este comando en especifico estamos creando 5 instancia del contenedor.
+
+Para tumbar o detener todos los contenedores que esten activos utilizamos el siguiente comando: `docker-compose down`.
+
+### Jenkins 
+
+Una vez bajemos un proyecto de jenkins del un respositorio, podemos observar su configuración con el siguiente comando: `cat docker-compose-jenkins.yml`, esto nos da un resultado como el siguiente: 
+
+        **
+        version: '3.5'
+
+        services:
+            jenkins:
+                image: 'jenkins/jenkins'
+                container_name: 'jenkins'
+                restart: always
+                ports:
+                    - '8090:8080'
+                    - '50000:50000'
+                volumes:
+                    - $PWD/jenkins_home:/var/jenkins_home
+                networks:
+                    - jenkinsnet
+
+        networks:
+            jenkinsnet:
+                driver: bridge
+
+        ** 
