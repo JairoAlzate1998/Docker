@@ -210,3 +210,7 @@ Despues de esto ya podemos entrar a nuestra herramienta desde el navegador, util
 Ya despues de esto instalamos los respectivos plugins y asignamos un usuario y una contraseña, con esto ya obtenemos la pantalla de inicio de sesión como se muestra a continuación: 
 
 ![alt text](./img/Jenkins.png)
+
+Una vez iniciamos sesion  obtenemos una pantalla como la siguiente donde ya podremos empezar a crear trabajos y empezar a con los proyectos.
+
+![alt text](./img/Jenkins2.png)
