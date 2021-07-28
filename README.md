@@ -196,3 +196,15 @@ Una vez bajemos un proyecto de jenkins del un respositorio, podemos observar su 
         ** 
 
 Para poner a correr un contenedor en especifico y no todos los que se encuentren en el sistema utilizamos el siguiente comando: `docker-compose -f nombre_Contendor up -d`. Con esto apartir del nombre del contenedor, lo iniciamos sin que los demas contenedores que tenemos se incien.
+
+Ahora para que el usuario pueda usar jenkins con todos los permisos, se los podemos asignar con los siguiente comandos: `sudo chown ubuntu:ubuntu jenkins_home`, ubuntu:ubuntu se remplaza por el nombre del usuario y la contraseña que tiene asignada, y tambien esta el comando: `sudo chmod 2777 jenkins_home`.
+
+Despues de esto ya podemos entrar a nuestra herramienta desde el navegador, utilizando la ip de nuestra maquina virtual, y utilizando el puerto configurado, en este caso el puerto 8090. Despues tenemos que poner la clave asignada: `/var/jenkins_home/secrets/initialAdminPassword` esta la obtenemos con los logs del contenedor, en este caso: `docker logs -f jenkins` y la clave es algo parecido a esto :
+
+            **
+            
+            547710ddd9b744d89ccb81415fa8e996
+            
+            **
+            
+Ya despues de esto instalamos los respectivos plugins y asignamos un usuario y una contraseña, con esto ya obtenemos la pantalla de inicio de sesión como se muestra a continuación: 
