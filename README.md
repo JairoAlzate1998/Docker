@@ -213,4 +213,4 @@ Ya despues de esto instalamos los respectivos plugins y asignamos un usuario y u
 
 Una vez iniciamos sesion  obtenemos una pantalla como la siguiente donde ya podremos empezar a crear trabajos y empezar a con los proyectos.
 
-![alt text](./img/Jenkins2.png)
+![alt text](./img/Jenkins 2.png)
