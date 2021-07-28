@@ -147,6 +147,9 @@ Ahora para las imagenes tenemos comandos como:
     
 Para poder inspeccionar un contenedor podemos usar el comando `docker inspect nombre_contenedor`. Esto nos arroja un reporte en tipo json el cual contiene desde la fecha que fue creado el contenedor hasta las configuraciones del contenedor.
 
+Ahora tambien tenemos una repositorio para las imagenes que creamos, este se llama dockerhub, una vez creamos la cuenta y nos logiamos tenemos los siguiente: 
+
+![alt text](./img/dockerhub.png)
 
 ## Clase 26 de Julio del 2021
 
